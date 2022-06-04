@@ -1,0 +1,15 @@
+.card_container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 400px;
+    margin-bottom: 30px;
+}
+
+.card_container img{
+    width: 100%;
+    height: 300px;
+}
+.card_container p {
+    min-height:1.2rem;
+}
