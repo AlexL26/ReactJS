@@ -1,25 +1,39 @@
 import CardsList from "../ItemList/ItemList";
 import React, { useEffect, useState } from "react";
-import showProduct  from "../../products";
+import  {showProduct, showGroupFaction }  from "../../products";
 //import './ItemList/itemlist.css'
+import { useParams } from "react-router-dom";
+const ItemListContainer = (props) =>{
+    const [prod, setProd]= useState([])
+    const [prodSide, setProdSide]= useState([])
 
-const ProductList = (props) =>{
-    const [prod, getProd]= useState([])
+    let param = useParams()
 
-    useEffect(() => {
+
+    useEffect(()=>{
+        Object.keys(param).length==0?
         showProduct().then(response => {
-            getProd(response)
+            setProd(response)
             return true
         }).catch(() => {
             return(console.log("algo paso pero no paso lo que yo queria que pase"))
         })
-    }, [])
+        :
+        showGroupFaction(param.side).then(response =>{
+            setProdSide(response)
+            return true
+        }).catch(error => console.log(error))
+    }, [param])
 
     return(
         <div>
-            {prod.length>0?<CardsList prod={prod} />:<h1>Loading...</h1>}
+
+            {
+                Object.keys(param).length>0?<CardsList prod={prodSide}/>
+                :prod.length>0?<CardsList prod={prod} />:<h1>Loading...</h1>
+            }
         </div>
     )
 }
 
-export default ProductList;
+export default ItemListContainer;

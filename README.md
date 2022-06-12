@@ -1,7 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+Este proyecto es de Alexis Lopez para el curso de ReactJS en Coderhouse comisión 31865. Es una tienda virtual de funko pops de la fraquicia de Star Wars, la cual tiene como objetivo simular todo el proceso relacionado a la navegación en el sitio, la visualización de los productos categorizados segun el grupo al que pertencen, y la adición de los productos a un carrito de compra con la finalización de dicho proceso. Esta principalmente orientado a usar React para el desarrollo y no tanto en relación al estilo.
 
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+Para poder visualizar el sitio se tiene que tener en cuenta lo siguiente
+
+## 'clonar el repositorio desde GitHub'
+
+Para ejecutar la App se necesita clonar el respositorio para poder ejecutarlo desde algun programa como VisualStudio
+
+## 'instalar npm'
+
+Ejecutar desde la terminal el comando 'npm install' desde la carpeta miapp
+
+## 'ejecutar npm start'
+
+Este comando permitirá ejecutar la App en el navegador.
+
+## 'gif de navegacion'
+
+miapp/ezgif.com-gif-maker (2).gif
+
+----------------------------------------------------------------------------
+
+A continuación se mencionan documentacion e instrucciones relacionadas a React.
 
 ## Table of Contents
 

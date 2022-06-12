@@ -1,5 +1,6 @@
-import React, {useState} from "react"
-import "./Item.css"
+import React, {useState} from "react";
+import "./Item.css";
+import { Link } from "react-router-dom";
 
 const ItemCards = (props) => {
     const [showDetail, setShowDetail] = useState(false)
@@ -9,10 +10,9 @@ const ItemCards = (props) => {
             <p>
             {props.name}
             </p>
-            <p>
-                {showDetail?props.price:''}
-            </p>
-            <button onClick={()=>setShowDetail(!showDetail)}>{showDetail?"Ocultar":"Ver precio"}</button>
+
+            <button onClick={()=>setShowDetail(!showDetail)}><Link className="link" to={`/item/${props.id}`}>Ver Detalles</Link></button>
+
         </div>
     )
 }

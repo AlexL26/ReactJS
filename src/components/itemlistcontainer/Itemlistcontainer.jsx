@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Itemlistcontainer({greeting}) {
+function potato({greeting}) {
   return (
     <h2>{greeting}</h2>
   )
 }
 
-export default Itemlistcontainer
+export default potato
