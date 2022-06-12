@@ -16,8 +16,13 @@ Este comando permitirá ejecutar la App en el navegador.
 
 ## 'gif de navegacion'
 
+Ruta del gif dentro del repositorio
+
 miapp/ezgif.com-gif-maker (2).gif
 
+Ruta al gif subido en GitHub
+
+https://github.com/AlexL26/ReactJS/blob/main/ezgif.com-gif-maker%20(2).gif
 ----------------------------------------------------------------------------
 
 A continuación se mencionan documentacion e instrucciones relacionadas a React.
