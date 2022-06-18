@@ -1,8 +1,17 @@
 import { showSearchedProduct } from "../../products";
-import React from "react";
+import React, {useContext} from "react";
 import './ItemDetail.css'; 
+import ItemCount from "../ItemCount/ItemCount";
+import CartContext from "../../utils/CartContext";
 
 export const ItemDetail = ({props}) => {
+
+  const {addItem} = useContext(CartContext)
+
+  function handleAdd(prod, cant){
+    const newitem = {...prod, quantity: cant}
+    addItem(newitem)
+  }
 
 
   return (
@@ -22,7 +31,9 @@ export const ItemDetail = ({props}) => {
         <h3>
         {props.price}
         </h3>
-        <button>Añadir al Carrito</button>
+        <div className="itemCount">
+          <ItemCount stock={props.stock} prod={props} onAdd={handleAdd} />
+        </div>
       </div>
     </div>
   )
