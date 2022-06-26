@@ -25,7 +25,7 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd, prod }) => {
                 <button onClick={reset}>Reset</button>
             </div>
             <div>
-                <button onClick={()=> onAdd(prod, count)}>Add to Cart</button>
+                <button onClick={()=> onAdd(prod, count)}>Add to Cart</button>|
             </div>
         </div>
     );

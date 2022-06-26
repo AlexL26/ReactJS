@@ -15,7 +15,7 @@ function CartContainer() {
                         <button onClick={()=>removeItem(item.id)}>Borrar</button>
                     </div>
                 )
-                : <h1>Carrito Vacio</h1>
+                : <h1>Empty Cart</h1>
             }
         </div>
     )
